@@ -4,9 +4,51 @@
   переключая тему
 */
 
+:root {
+    /* --bg-image: url(../images/cover-image-light.png);
+    --bg-color: #fff;
+    --accent-color: #ff8dcb;
+    --size-main-text: 18px;
+    --color-main-text: #353430;
+    --header-color: #FFC2E6;*/
+} 
+
+
+
 :root.theme-light {
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
+    --bg-image: url(../images/cover-image-light.png);
+    --bg-color: #fff;
+    --accent-color: #ff8dcb; 
+    --size-main-text: 18px;
+    --color-main-text: #353430;
+    --header-color: #FFC2E6;
+    --header-color-menu: #353430;
+
+    .rec-text {
+      display: none;
+    }
 }
+
+
+@media (prefers-color-scheme: light) {
+  :root {
+    /* Дублируем только те же переменные, что и выше */
+    --bg-image: url(../images/cover-image-light.png);
+    --bg-color: #fff;
+    --accent-color: #ff8dcb;
+    --size-main-text: 18px;
+    --color-main-text: #353430;
+    --header-color: #FFC2E6;
+    --header-color-menu: #353430;;
+  }
+
+  .rec-text {
+    display: none;
+  }
+
+  /* Остальные стили, только при необходимости */
+} 
