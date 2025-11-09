@@ -71,7 +71,7 @@
 
 .title-decor {
   justify-self: right;
-  width: clamp(355px, 50vw, 491px); /* Адаптивная ширина */
+  width: clamp(355px, 364px, 491px); /* Адаптивная ширина */
   min-height: 117px;
   color: rgba(0, 0, 40, 1);
   font-family: IBM Plex Mono;
