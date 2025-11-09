@@ -63,7 +63,7 @@
   color: var(--header-color);
   font-family: IBM Plex Mono;
   font-weight: 700;
-  font-size: clamp(7.25rem, 5.7694rem + 6.3174vw, 9.8125rem);;
+  font-size: clamp(7.25rem, 5.7694rem + 6.3174vw, 9.8125rem);
   line-height: 82.5%;
   text-align: left;
   text-shadow: 4px 4px 0 var(--accent-color);
@@ -245,10 +245,6 @@
     padding: 0 20px 0;
   }
 
-  /* .header__title {
-    font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-  } */
-
   .decorated-zone::before {
     bottom: 20px;
     left: 20px;
@@ -292,6 +288,25 @@
     grid-column: 2;
     grid-row: 1;
     gap: 20px;
+  }
+
+  /*изм  Что снижает концентрацию*/
+  .section__what-reduces-concentration {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    align-items: start;
+  }
+
+  .what-reduces-concentration-title {
+    grid-column: 1;
+    grid-row: 1;
+    justify-self: start;
+  }
+
+  .what-reduces-article {
+    grid-column: 1/4;
+    grid-row: 2/4;
   }
 
   /*---Изм секции Как концентрироваться лучше---*/
@@ -369,7 +384,7 @@
     grid-template-rows: auto;
     align-items: start;
     gap: 20px;
-  }
+  } 
 
   .what-reduces-concentration-title {
     grid-column: 1;
