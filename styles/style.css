@@ -146,6 +146,7 @@
 /*Настройка названий Секций*/
 .section__title {
   padding-block-end: 20px;
+  padding-inline-end: 6px;
   color: var(--header-color-menu);
   font-family: IBM Plex Mono;
   font-weight: 700;
