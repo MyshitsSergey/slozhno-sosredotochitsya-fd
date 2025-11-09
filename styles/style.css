@@ -244,7 +244,7 @@
     padding: 0 20px 0;
   }
 
-  .header__title{
+  .header__title {
     font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   }
 
@@ -281,8 +281,8 @@
    .concentrate__info-title {
     grid-column: 1;
     grid-row: 1;
-    justify-self: start; 
-  } 
+    justify-self: start;
+  }
 
    /* Список с контентом в правой колонке */
   .concentrate__info-list {
@@ -305,7 +305,7 @@
   .section__how-to-concentrate-title {
     grid-column: 1;
     grid-row: 1;
-    justify-self: start; 
+    justify-self: start;
   }
 
   .how-to-concentrate-article {
@@ -368,7 +368,7 @@
   .what-reduces-concentration-title {
     grid-column: 1;
     grid-row: 1;
-    justify-self: start; 
+    justify-self: start;
   }
 
   .what-reduces-article {
