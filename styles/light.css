@@ -32,6 +32,9 @@
     --color-main-text: #353430;
     --header-color: #FFC2E6;
     --header-color-menu: #353430;
+    --font-page: IBM Plex Mono, Arial, Helvetica, sans-serif;
+    --color-title-decor:#353430;
+    --color-hover: rgba(50, 49, 45, 0.4);
 
     .rec-text {
       display: none;
@@ -48,7 +51,10 @@
     --size-main-text: 18px;
     --color-main-text: #353430;
     --header-color: #FFC2E6;
-    --header-color-menu: #353430;;
+    --header-color-menu: #353430;
+    --font-page: IBM Plex Mono, Arial, Helvetica, sans-serif;
+    --color-title-decor:#353430;
+    --color-hover: rgba(50, 49, 45, 0.4);
   }
 
   .rec-text {
@@ -56,4 +62,4 @@
   }
 
   /* Остальные стили, только при необходимости */
-} 
+}
