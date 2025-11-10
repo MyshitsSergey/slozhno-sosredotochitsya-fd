@@ -6,9 +6,9 @@
   background-color: var(--bg-color, #000028);
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
   background-image: var(--bg-image, url(../images/cover-image-dark.png));
-  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
   background-attachment: fixed;
 }
 
@@ -20,8 +20,8 @@
   justify-items: center;
   align-items: center;
   min-width: 355px;
-  min-height: 668px;
   height: 100vh;
+  min-height: 668px;
   padding: 0 10px 0;
 }
 
@@ -148,8 +148,8 @@
 
 /*Настройка названий Секций*/
 .section__title {
-  padding-block-end: 20px;
   padding-inline-end: 6px;
+  padding-block-end: 20px;
   color: var(--header-color-menu);
   font-family: var(--font-page);
   font-weight: 700;
@@ -168,11 +168,13 @@
 /*Настройка названия пункта списка*/
 .section__info-list__title {
   width: -webkit-fill-available;
-  margin-block-end: 10px;
 }
 
 /*Настройка текста пункта в списке*/
 .section__info-text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
   font-family: var(--font-page);
   font-weight: 400;
   line-height: 23.4px;
@@ -189,8 +191,8 @@
   font-weight: 400;
   line-height: 23.4px;
   text-align: left;
-  text-shadow: 2px 2px 0 var(--accent-color);
   text-decoration: none;
+  text-shadow: 2px 2px 0 var(--accent-color);
 }
 
 .concentrate__info__link:hover {
@@ -213,6 +215,7 @@
   display: grid;
   grid-template-columns: 1fr;
   gap: 10px;
+  padding-block-start: 10px;
 }
 
 .gallery-image {
@@ -227,8 +230,8 @@
   display: grid;
   justify-content: center;
   align-items: center;
-  min-height: 668px;
   height: 100vh;
+  min-height: 668px;
 }
 
 @media (min-width: 768px) {
