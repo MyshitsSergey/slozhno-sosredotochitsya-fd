@@ -402,11 +402,18 @@
     left: 36%;
   }
 
+  .header__theme-menu {
+    justify-self: center;
+    align-self: first baseline;
+    padding-block-start: 20px;
+  }
+
   .header__theme-menu-item {
     padding: 2px 0 0 0;
   }
 
   .header__theme-menu-list {
+    flex-direction: row;
     gap: 11px;
   }
   
@@ -426,16 +433,6 @@
 
    .what-reduces-concentration-list {
     grid-template-columns: repeat(3, 1fr);
-  }
-
-  .header__theme-menu {
-    justify-self: center;
-    align-self: first baseline;
-    padding-block-start: 20px;
-  }
-
-  .header__theme-menu-list {
-    flex-direction: row;
   }
 }
 
