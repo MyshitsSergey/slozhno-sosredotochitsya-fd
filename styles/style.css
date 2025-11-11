@@ -32,7 +32,7 @@
 .header__theme-menu-list {
   display: flex;
   flex-direction: column;
-  gap: 9.5px;
+  gap: 6px;
   color: var(--header-color-menu);
   font-family: var(--font-page);
   font-weight: 400;
@@ -40,10 +40,14 @@
   text-align: center;
 }
 
+.header__theme-menu-item {
+  padding: 9px 0 0px;
+}
+
 .header__theme-menu-button {
   border: none;
   border-bottom: 1px solid transparent;
-  padding: 7px 13px 0px;
+  padding: 0px 13px 1.5px;
   text-transform: lowercase;
   transition:  outline 0.7s ease, border-color 0.7s ease; /*transition для плавного появление и тушения hover*/
 }
@@ -243,8 +247,26 @@
     padding: 0 20px 0;
   }
 
+  .header__theme-menu-list {
+    gap: 0;
+  }
+
+  .header__theme-menu-item {
+    padding: 16px 0 0 0;
+  }
+
   .header__title {
-  font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  }
+
+  .header__title-text {
+    padding-block-end: 20px;
+  }
+
+  .header__title-up {
+    position: relative;
+    left: 37%;
+    transform: translateX(-50%);
   }
 
   .decorated-zone::before {
@@ -343,6 +365,7 @@
     "tape books icecream"
     "tape street street";
     gap: 20px;
+    padding-block-start: 20px;
   }
 
   /* Каждое изображение в своей ячейке */
@@ -374,12 +397,25 @@
 }
 
 @media (min-width: 1024px) {
-   .concentrate__info {
-    grid-template-columns: 1fr 2.6fr;
+
+  .header__title-up {
+    left: 36%;
+  }
+
+  .header__theme-menu-item {
+    padding: 2px 0 0 0;
+  }
+
+  .header__theme-menu-list {
+    gap: 11px;
+  }
+  
+  .concentrate__info {
+    grid-template-columns: 1fr 2.06fr;
   }
 
   .section__how-to-concentrate {
-    grid-template-columns: 1fr 2.6fr;
+    grid-template-columns: 1fr 2.06fr;
   }
 
   .what-reduces-article {
