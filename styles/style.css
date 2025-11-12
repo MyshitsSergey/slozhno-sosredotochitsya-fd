@@ -89,8 +89,9 @@
   background: var(--accent-color);
 }
 
-.header__title-text {
-  padding-block-end: 10px;
+.title-decor__size {
+  margin-block-end: 31px;
+  margin-block-start: 21px;
 }
 
 /*надпись REC*/
@@ -259,14 +260,12 @@
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 
-  .header__title-text {
-    padding-block-end: 20px;
+  .title-decor__size {
+    margin-block-end: 41px;
   }
 
   .header__title-up {
-    position: relative;
-    left: 37%;
-    transform: translateX(-50%);
+    margin-inline-start: -20px;
   }
 
   .decorated-zone::before {
@@ -289,8 +288,8 @@
     padding: 60px 20px 60px;
   }
 
-  /*---Изм секции Почему сосредоточиться---*/
-  .concentrate__info {
+  /*---Изм секции Почему сосредоточиться и Как концентрироваться лучше---*/
+  .section__concentrate__info_what_how-to {
     display: grid;
     grid-template-columns: 1fr 2fr; /* Левая колонка уже, правая шире */
     grid-template-rows: auto;
@@ -316,10 +315,8 @@
 
   /*изм  Что снижает концентрацию*/
   .section__what-reduces-concentration {
-    display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto;
-    align-items: start;
+    gap: 0;
   }
 
   .what-reduces-concentration-title {
@@ -331,15 +328,6 @@
   .what-reduces-article {
     grid-column: 1/4;
     grid-row: 2/4;
-  }
-
-  /*---Изм секции Как концентрироваться лучше---*/
-  .section__how-to-concentrate {
-    display: grid;
-    grid-template-columns: 1fr 2fr; /* Левая колонка уже, правая шире */
-    grid-template-rows: auto;
-    align-items: start;
-    gap: 20px;
   }
 
   .section__how-to-concentrate-title {
@@ -365,7 +353,7 @@
     "tape books icecream"
     "tape street street";
     gap: 20px;
-    padding-block-start: 20px;
+    padding-block-start: 18px;
   }
 
   /* Каждое изображение в своей ячейке */
@@ -398,10 +386,6 @@
 
 @media (min-width: 1024px) {
 
-  .header__title-up {
-    left: 36%;
-  }
-
   .header__theme-menu {
     justify-self: center;
     align-self: first baseline;
@@ -417,11 +401,7 @@
     gap: 11px;
   }
   
-  .concentrate__info {
-    grid-template-columns: 1fr 2.06fr;
-  }
-
-  .section__how-to-concentrate {
+  .section__concentrate__info_what_how-to {
     grid-template-columns: 1fr 2.06fr;
   }
 
@@ -435,10 +415,3 @@
     grid-template-columns: repeat(3, 1fr);
   }
 }
-
-
-
-
-
-
-
